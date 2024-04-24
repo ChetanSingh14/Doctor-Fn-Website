@@ -109,8 +109,34 @@ export default function Landing() {
         <button className="bg-teal-500 mb-24 m-auto hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full text-lg font-thin">
               New Patient Form
             </button>
-        
         </div>
+
+     <div className="bg-red-400 p-12">    
+      <h1 className="text-4xl text-center text-green-600">Taking care of your health</h1>
+        <div className="flex "> 
+          <div className="bg-gray-200 m-12 flex">
+             <img src="https://cdn.pixabay.com/photo/2017/03/21/02/00/letter-2160916_1280.png" className="rounded-full h-20"/>
+               <h2>Health Plans We Accept</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente ipsam qui minus nostrum nulla quo beatae magnam et eveniet.</p>
+               <button>Read more</button>
+          </div>
+
+          <div className="bg-gray-200 m-12">
+             <img src="https://cdn.pixabay.com/photo/2017/03/21/02/00/letter-2160916_1280.png" className="rounded-full h-20"/>
+               <h2>Health Plans We Accept</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente ipsam qui minus nostrum nulla quo beatae magnam et eveniet.</p>
+               <button>Read more</button>
+          </div>
+
+          <div className="bg-gray-200 m-12">
+             <img src="https://cdn.pixabay.com/photo/2017/03/21/02/00/letter-2160916_1280.png" className="rounded-full h-20"/>
+               <h2>Health Plans We Accept</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente ipsam qui minus nostrum nulla quo beatae magnam et eveniet.</p>
+               <button>Read more</button>
+           </div>
+          </div> 
+        </div>
+
     </>
   );
 }
