@@ -1,12 +1,19 @@
-import Navbar from './Components/Navbar/Navbar'
+import Card from './Components/Landing/Card'
+import Landing from './Components/Landing/Landing'
+import Navbar from './Components/Navbar/Navbar';
+import {Routes, Route} from 'react-router-dom';
 
 
 function App() {
 
   return (
     <div>
-      {/* <h1 className='bg-gray-700'>Hey</h1> */}
       <Navbar/>
+      <Routes>
+        <Route>
+         <Route path='/' element={<Landing/>}/>
+        </Route>
+      </Routes>
     </div>
   )
 }
