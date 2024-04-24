@@ -16,7 +16,7 @@ function App() {
          <Route path='/forum' element={<Forum/>}/>
         </Route>
       </Routes>
-      <Forum/>
+   
     </div>
   )
 }
