@@ -15,11 +15,11 @@ export default function Navbar() {
       <div className='hidden lg:flex flex-col lg:flex-row items-center'>
         <ul className='flex flex-col lg:flex-row list-none space-y-4 lg:space-y-0 lg:space-x-12 text-center lg:text-left'>
           <li><a href="/" className="text-white">Meet Dr. XYZ</a></li>
-          <li><a href="/about" className="text-white">Services</a></li>
-          <li><a href="/about" className="text-white">Patient Info</a></li>
-          <li><a href="/about" className="text-white">Forum</a></li>
-          <li><a href="/about" className="text-white">Members</a></li>
-          <li><a href="/about" className="text-white">Contact</a></li>
+          <li><a href="/" className="text-white">Services</a></li>
+          <li><a href="/" className="text-white">Patient Info</a></li>
+          <li><a href="/" className="text-white">Forum</a></li>
+          <li><a href="/" className="text-white">Members</a></li>
+          <li><a href="/" className="text-white">Contact</a></li>
         </ul>
 
         <button className='bg-teal-700 text-white px-4 py-2 rounded-full flex items-center justify-center mt-6 lg:mt-0 lg:ml-6'>
