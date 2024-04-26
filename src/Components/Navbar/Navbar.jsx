@@ -16,11 +16,13 @@ export default function Navbar() {
         <ul className='flex flex-col lg:flex-row list-none space-y-4 lg:space-y-0 lg:space-x-12 text-center lg:text-left'>
           <li><a href="/" className="text-white">Meet Dr. XYZ</a></li>
 
+
           <li><a href="/services" className="text-white">Services</a></li>
           <li><a href="/info" className="text-white">Patient Info</a></li>
           <li><a href="/forum" className="text-white">Forum</a></li>
           <li><a href="/member" className="text-white">Members</a></li>
           <li><a href="/contact" className="text-white">Contact</a></li>
+
 
         </ul>
 
