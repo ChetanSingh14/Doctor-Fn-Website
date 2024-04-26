@@ -19,7 +19,7 @@ export default function Navbar() {
 
           <li><a href="/services" className="text-white">Services</a></li>
           <li><a href="/info" className="text-white">Patient Info</a></li>
-          <li><a href="/forum" className="text-white">Forum</a></li>
+          <li><Link to="/forum" className="text-white">Forum</Link></li>
           <li><a href="/member" className="text-white">Members</a></li>
           <li><a href="/contact" className="text-white">Contact</a></li>
 
