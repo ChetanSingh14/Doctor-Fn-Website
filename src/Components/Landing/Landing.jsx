@@ -64,7 +64,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-100 flex flex-col justify-center">
+      <div className="min-h-screen bg-gray-100 flex flex-col justify-center" id="services">
         <h1 className="text-3xl font-bold text-center mt-16 text-cyan-600">
           How Can I Help You
         </h1>
@@ -103,7 +103,7 @@ export default function Landing() {
         </button>
       </div>
 
-      <div className="bg-green-50 flex flex-col  justify-center items-center">
+      <div className="bg-green-50 flex flex-col  justify-center items-center" id="info">
         <h1 className="text-4xl font-semibold my-8 text-cyan-600">
           Insurance Policy
         </h1>
