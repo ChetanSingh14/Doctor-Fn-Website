@@ -20,7 +20,7 @@ export default function Forum() {
 
     
     // </div>
-    <div>
+    <div className='mb-24'>
     <SearchAppBar/>
     <div className='grid justify-items-center ...'>
 
