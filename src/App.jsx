@@ -1,3 +1,4 @@
+import Contact from './Components/Contact/Contact';
 import Forum from './Components/Forum/Forum';
 import Landing from './Components/Landing/Landing'
 import Navbar from './Components/Navbar/Navbar';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
          <Route path='/' element={<Landing/>}/>
          <Route path='/forum' element={<Forum/>}/>
+         <Route path='/contact' element={<Contact/>}/>
       </Routes>
     </div>
     </>
