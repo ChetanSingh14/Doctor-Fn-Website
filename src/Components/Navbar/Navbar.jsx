@@ -17,19 +17,19 @@ export default function Navbar() {
           <li><a href="/" className="text-white">Meet Dr. XYZ</a></li>
 
 
-          <li><a href="#services" className="text-white">Services</a></li>
-          <li><a href="#info" className="text-white">Patient Info</a></li>
+          <li><a href="/services" className="text-white">Services</a></li>
+          <li><a href="/info" className="text-white">Patient Info</a></li>
           <li><Link to="/forum" className="text-white">Forum</Link></li>
           <li><a href="/member" className="text-white">Members</a></li>
-          <li><Link to="/contact" className="text-white">Contact</Link></li>
+          <li><a href="/contact" className="text-white">Contact</a></li>
 
 
         </ul>
 
-        <Link to='register'><button className='bg-teal-700 text-white px-4 py-2 rounded-full flex items-center justify-center mt-6 lg:mt-0 lg:ml-6'>
+        <button className='bg-teal-700 text-white px-4 py-2 rounded-full flex items-center justify-center mt-6 lg:mt-0 lg:ml-6'>
           <AccountCircleIcon className='mr-2' />
           Log In
-        </button></Link>
+        </button>
       </div>
 
       {/* Menu button for smaller screens */}
