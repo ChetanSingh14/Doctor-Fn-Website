@@ -6,7 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 function Footer() {
   return (
     <footer className="bg-emerald-950 text-white py-8">
-      <div className="container mx-auto">
+      <div className="container mx-auto sm:m-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <h5 className="text-lg font-semibold mb-2">Contact Us</h5>

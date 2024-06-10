@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Footer from "../Footer/Footer";
+import Appointment from '../Appointment';
 
 export default function Landing() {
   return (
@@ -64,7 +65,7 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-100 flex flex-col justify-center" id="services">
+      <div className="min-h-screen bg-gray-100 flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-center mt-16 text-cyan-600">
           How Can I Help You
         </h1>
@@ -213,6 +214,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
+      <Appointment/>
     </>
   );
 }
