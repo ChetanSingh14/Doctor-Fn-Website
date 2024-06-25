@@ -10,12 +10,13 @@ import Services from './Components/Services/Services';
 import Info from './Components/Patient/Info';
 import Reviews from './Components/Patient/Reviews';
 import Blogs from './Components/Blogs/Blogs';
+import Location from './Components/Location/Location';
 
 
 function App() {
 
   return (
-    <div className=''>
+    <div>
       <Navbar/>
 
       <Routes>
@@ -24,12 +25,13 @@ function App() {
          <Route path='/patientInfo' element={<Info/>}/>
          <Route path='/patientReview' element={<Reviews/>}/>
          <Route path='/blog' element={<Blogs/>}/>
+         <Route path='/location' element={<Location/>}/>
          <Route path='/contact' element={<Contact/>}/>
       </Routes>
      
     <Footer/> 
-    {/* <Login/> */}
-    {/* <SignUp/> */}
+    {/* <Login/> 
+     <SignUp/> */}
     </div>
   )
 }

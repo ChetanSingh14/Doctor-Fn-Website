@@ -2,6 +2,10 @@ import React from "react";
 import Card from "./Card";
 import Footer from "../Footer/Footer";
 import Appointment from '../Appointment';
+import ReviewCard from "../Patient/ReviewCard";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Link } from 'react-router-dom';
 
 export default function Landing() {
   return (
@@ -214,6 +218,48 @@ export default function Landing() {
           </div>
         </div>
       </div>
+      <div className='bg-green-50'>
+    <div className='md:p-20 flex flex-col justify-center'>
+      <div className='text-center mb-8'>
+        <h1 className='text-3xl md:text-4xl font-bold md:my-4 my-6'>Patient Reviews</h1>
+        <p className='text-lg md:text-xl font-extralight'>
+          Check out some of the latest reviews of Dr. XYZ from various online platforms. For a more comprehensive view and the ability to filter by source, doctor, and rating, please visit our page dedicated to patient experiences and reviews for Dr. XYZ.
+        </p>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-40'>
+      
+        <ReviewCard 
+          head="Tanya R." 
+          p1="Source: Partner Reviews" 
+          p2="Dr.Sales as patient, through, great bed side manner. Checked everything I highly recommend her! She's a keeper as my primary care physician." 
+          p3="Jun 15, 2024" 
+          p4="5.0"
+        /> 
+
+        <ReviewCard 
+          head="Marcos S." 
+          p1="Source: Google" 
+          p2="Was looking for a new doctor and found Dr. Amarnani. It was super easy to set up an appointment with many dates and times available..." 
+          p3="Jun 15, 2024" 
+          p4="5.0"
+        />
+        <ReviewCard 
+          head="Roraima Ana A." 
+          p1="Source: Partner Reviews" 
+          p2="Easy to book professional doctor, friendly staff" 
+          p3="May 31, 2024" 
+          p4="5.0"
+        />
+      </div>
+      <div className='flex justify-between mt-16 px-4'>
+          <ArrowBackIosIcon/>
+          <ArrowForwardIosIcon/>
+      </div>
+      <div className='flex justify-center my-8'>
+        <Link className="/">
+        <button className='w-64 bg-teal-500 text-white p-3 hover:bg-teal-600 rounded-lg'>SHOW ALL PATIENT REVIEWS</button></Link>
+      </div>
+    </div></div>
       <Appointment/>
     </>
   );

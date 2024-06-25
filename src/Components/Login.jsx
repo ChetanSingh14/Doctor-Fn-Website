@@ -1,43 +1,55 @@
-import axios from 'axios';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 
+const SignIn = () => {
+  const [isSignUp, setIsSignUp] = useState(false);
 
-export default function Login() {
-    const [userLogin, setUserLogin] = useState({email:"", password:""});
+  const toggleSignUp = () => {
+    setIsSignUp(!isSignUp);
+  };
 
-    const handleChange = (e) => {
-        setUserLogin({...userLogin, [e.target.name]:e.target.value })
-    }
-
-    const handleSubmit = async (e)=>{
-        e.preventDefault();
-        try{
-        const res = await axios.post('http://localhost:8000/',userLogin,{
-            header:{
-                'Content-Type': 'application/json'
-            }});
-            console.log(res.data);
-            if(res.data.status === "OK"){
-              alert("Success") 
-            }else{
-                alert("Error");
-            }
-        }
-        catch(err){
-            console.log(err);
-        }
-    }
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+  };
 
   return (
-    <div className='border-2 w-1/2 m-12 text-black'>
-        <form onSubmit={handleSubmit} className='m-6'>
-        
-        <input className='border-2 ' placeholder='email' type="text" name="email" value={userLogin.email} onChange={handleChange}/><br /><br/>  
-         <input className='border-2 ' placeholder='pass' type="text" name="password" value={userLogin.password}  onChange={handleChange}/><br /><br/>
-         
-         <button className='border-2 ' type='submit'>Login</button>
-        </form>
+    <div className="w-full max-w-xs mx-auto bg-red-200">
+      <h1 className="text-2xl font-bold mb-4">{isSignUp ? 'Sign Up' : 'Sign In'}</h1>
+      <form onSubmit={handleSubmit} className="mb-4">
+        {isSignUp && (
+          <div className="mb-4">
+            <input type="text" placeholder="Username" className="input" />
+          </div>
+        )}
+        <div className="mb-4">
+          <input type="email" placeholder="Email" required className="input" />
+        </div>
+        <div className="mb-4">
+          <input type="password" placeholder="Password" required className="input" />
+        </div>
+        {isSignUp && (
+          <div className="mb-4">
+            <input type="password" placeholder="Confirm Password" required className="input" />
+          </div>
+        )}
+        <button type="submit" className="btn">{isSignUp ? 'Sign Up' : 'Sign In'}</button>
+      </form>
+      {isSignUp ? (
+        <p>Already have an account? <span onClick={toggleSignUp} className="text-blue-500 cursor-pointer">Sign In</span></p>
+      ) : (
+        <p>Don't have an account? <span onClick={toggleSignUp} className="text-blue-500 cursor-pointer">Sign Up</span></p>
+      )}
+      <div className="mt-4">
+        <button className="btn">Login with Facebook</button>
+        <button className="btn">Login with Google</button>
+      </div>
+      {!isSignUp && (
+        <p>
+          <a href="/" className="text-blue-500">Forgot Password?</a>
+        </p>
+      )}
     </div>
-  )
-}
+  );
+};
+
+export default SignIn;
